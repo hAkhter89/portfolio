@@ -1,0 +1,333 @@
+body {
+    background-color: #222;
+    font-size: 16;
+    color: white;
+}
+/* Navigation*/
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-family:'arial black';
+}
+
+.bg-dark {
+    background-color: #222 !important;
+
+}
+.navbar .container-xl {
+    opacity: 1;
+}
+
+.nav-list {
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+.nav-item a .bi-question {
+    font-size: 1em;
+}
+
+.nav-item a:hover {
+    border-radius: 20px;
+    background-color: #ccc;
+    color: #222 !important;
+}
+.nav-link {
+    border:transparent 2px;
+    border-radius: 20px;
+}
+
+.featured {
+    margin-right: 2px;
+    border: powderblue 2px solid;
+    border-radius: 20px;
+}
+/* Navigation END */
+
+/* Main Content */
+.main-content {
+    text-align: center;
+    color:white;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.main-content .name {
+    font-size: 140px;
+    font-family:'Moon Dance';
+}
+.main-content .title {
+    font-size: 35px;
+    font-family: 'Moon Dance', cursive;
+}
+/* Main-Content END */
+
+/* Featured Content */
+.featured-content {
+    background-color: #222;
+    padding-bottom: 100px;
+    width: 100%;
+    margin: auto;
+}
+.section-title {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    margin-top: 300px;
+}
+.section-title:hover {
+    color: powderblue;
+}
+.tile {
+    border: powderblue 2px solid;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.tile:hover {
+    box-shadow: lightgrey 1px 1px 7.5px;
+}
+.redirect-feat {
+    text-decoration: none;
+    color: inherit;
+}
+.redirect-feat:hover {
+    text-decoration: none;
+    color: gray;
+}
+.proj-details {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: 100;
+}
+.proj-title {
+    font-family: cursive;
+    font-weight: lighter;
+}
+.inner-row {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.info{
+    padding: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.preview {
+    height: 190px;
+    padding: auto;
+    margin: 5px 0px;
+}
+
+.img-rotate:hover {
+    transform: rotate(350deg);
+
+}
+/* Featured Content END */
+
+/* Footer */
+
+.footer-content {
+    padding-top: 50px;
+    padding-bottom:30px ;
+}
+.panel-footer {
+    background-color: #111;
+}
+.quick-link {
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.quick-links {
+    margin-top: 15px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.top-proj {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.copyright {
+    font-size: 1.5em;
+    margin-top: 30px
+}
+.test-basis {
+    padding-bottom: 50px;
+}
+.italic {
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+hr {
+    color: white;
+    border: 1px solid white;
+}
+
+/* Footer END */
+
+/* Projects Page */
+.signature {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Moon Dance';
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.signature .name {
+    font-size: 2em ;
+}
+.projectpage-title {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.proj {
+    margin-top: 15px;
+    border: 1px powderblue solid;
+    border-radius: 10px;
+    color: inherit;
+    text-decoration: none;
+    max-height: 250px;
+    overflow: hidden;
+}
+.proj:hover {
+    box-shadow: white 1px 1px 5px;
+    color: gray;
+}
+.projectsmain-content {
+    padding-bottom: 50px;
+}
+.preview:hover {
+    transform: rotate(350deg);
+}
+.imgcorrection-proj {
+    height: 190px;
+    padding: auto;
+    margin: 5px 0px;
+}
+.imgcorrection-proj:hover {
+    transform: rotate(350deg);
+}
+/* Projects Page END */
+
+/* About Page/Project Page */
+.aboutproj-details {
+    padding-top: 30px;
+}
+.aboutprojpage-title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.about-main {
+    margin-top: -10px;
+    margin-bottom: 100px;
+}
+.aboutproj-details .proj-details {
+    margin: inherit 20px;
+}
+
+.mobile-view {
+    margin-top: 50px;
+    border-top: seagreen solid 2px;
+    border-bottom: seagreen solid 2px;
+    margin-bottom: 100px;
+    padding-top: 3px;
+}
+.viewpic {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 100px;
+}
+.desk-pic {
+    border: seagreen 1px solid;
+    padding: 0;
+}
+
+.sectiontitles {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.mobileviewpic:hover {
+    transform: rotate(350deg);
+}
+.responsive-title {
+    margin-bottom: 50px;
+}
+.projectpage-title a {
+    text-decoration: none;
+
+}
+.titlesrow {
+    padding: 0;
+    margin: auto;
+}
+.mobileviewpic .absolute {
+    width: 120px;
+}
+.project-header {
+    font-family: cursive;
+    text-decoration: grey;
+    color: grey;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Media Queries */
+
+@media (min-height: 1000px) {
+    .main-content {
+        margin-top: 400px;
+    }
+}
+
+@media (min-width:577px) and (max-width:767px) {
+    .main-content .name {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-content .name {
+        font-size: 60px;
+    }
+
+    .main-content {
+        margin-top: 250px;
+    }
+    .mobile-view .row {
+        justify-content: center;
+    }
+    .mobileviewpic {
+        margin-bottom: 30px;
+    }
+    .imgcorrection-proj {
+        height:inherit;
+    }
+}
+
+
+/* Media Queries END */
