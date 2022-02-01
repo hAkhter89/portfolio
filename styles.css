@@ -295,6 +295,35 @@ hr {
     font-style: italic;
 }
 
+/* Certificates Page */
+
+#certificatesmain {
+    margin-top: 50px;
+}
+
+.certifpic {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.certifinfo {
+    margin-bottom: 20px;
+}
+.certif-details {
+    font-style: italic;
+}
+
+.course-title {
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color: #D3C9A6FF;
+}
+.img-responsive {
+    border: #000 solid  2px;
+}
+
+/* Certificates Page END */
+
 
 /* Media Queries */
 
