@@ -38,13 +38,13 @@
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li class="visible-xs">
+            <li id="navHomeButton" class="visible-xs active">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home
               </a>
             </li>
-            <li>
-              <a href="menu-categories.html">
+            <li id="navMenuButton"> 
+              <a href="#" onclick="$dc.loadMenuCategories();">
                 <span class="glyphicon glyphicon-cutlery"></span>
                 <br class="hidden-xs">Menu</a>
             </li>
@@ -77,33 +77,7 @@
   </div>
   <div id="xs-deliver" class="text-center visible-xs">We Deliver!</div>
 
-  <div id="main-content" class="container">
-    <div class="jumbotron">
-      <img src="images/jumbotron_768.jpg" alt="Pic of Restaurant" class="img-responsive visible-xs">
-    </div>
-
-    <div id="home-tiles" class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="menu-categories.html">
-          <div id="menu-tile"><span>Menu</span></div>
-        </a>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html">
-          <div class="hi" id="specials-tile"><span>Specials</span></div>
-        </a>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <a href="https://goo.gl/maps/M4kPZpR2qw5L8yRh7" target="_blank">
-          <div id="map-tile"><span>Map</span>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12338.70098200007!2d-76.7116881!3d39.3635903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2s!4v1641336457372!5m2!1sen!2s"
-              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </a>
-      </div>
-    </div> <!-- End of tiles -->
-  </div>
+  <div id="main-content" class="container"></div>
   <!--End of main content -->
 
   <footer class="panel-footer">
@@ -120,7 +94,7 @@
           <span>Address:</span><br>
           PECHS Block 6<br>
           Karachi<br>
-          <p>*....</p>
+          <p>*Delivery area within 3-4miles, with minimum order of $20 plus $3 for deliveries.</p>
           <hr class="visible-xs">
         </section>
         <section id="testimonials" class="col-sm-4">
@@ -138,6 +112,7 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/ajax-utils.js"></script>
 </body>
 
 </html>
