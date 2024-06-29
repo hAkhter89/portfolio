@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epsilon Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-epsilondev-grey">
+    <!-- Navbar -->
+    <section class="section-1 bg-veryDarkBlue">
+        <nav class="relative container mx-auto p-3">
+            <!-- Flex container -->
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="pt-1">
+                    <a href="index.html"><img src="./imgs/epsilon 112.png" height="50px" width="300px" alt=""></a>
+                </div>
+                <!-- Menu Items -->
+                <div class="text-white md:flex space-x-6 hidden">
+                    <a class="hover:text-epsilondev-blue text-lg mt-2" href="#">Modules</a>
+                    <a class="hover:text-epsilondev-blue text-lg mt-2" href="#team">Team</a>
+                    <!-- <a class="hover:text-darkGrayishBlue text-lg mt-2" href="#">About</a>
+                    <a class="hover:text-darkGrayishBlue text-lg mt-2" href="#">Contact Us</a> -->
+                    <a class="hover:text-epsilondev-blue text-lg mt-2" href="./Blog/blog.html">Blog</a>
+                    <a class="hover:text-epsilondev-blue text-lg mt-2" href="./Login/login1.html">Login</a>
+                    <a class="hidden md:block p-3 px-6 text-white bg-epsilondev-purple rounded-full baseline hover:text-epsilondev-blue"
+                        href="./Registration/register.html">
+                        Register
+                    </a>
+
+                </div>
+                <!-- Button -->
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+
+            </div>
+            </div>
+            <div class="md:hidden">
+                <div id="menu"
+                    class="absolute flex-col items-center self-end py-8 mt-7 space-y-6 px-2 font-bold bg-white text-black sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden rounded-2xl">
+                    <a class="hover:text-epsilondev-blue" href="">Modules</a>
+                    <a class="hover:text-epsilondev-blue" href="">Team</a>
+                    <a class="hover:text-epsilondev-blue" href="">About</a>
+                    <a class="hover:text-epsilondev-blue" href="">Blog</a>
+                    <a class="hover:text-epsilondev-blue underline decoration-epsilondev-blue decoration-2 underline-offset-4"
+                        href="">Login</a>
+                    <a href=""
+                        class="rounded-4xl font-semibold w-full text-white bg-epsilondev-purple text-center py-2 text-lg rounded-md hover:bg-epsilondev-blue">Register</a>
+        </nav>
+    </section>
+
+    <section class="Section-2" id="hero">
+        <!-- Flex Container -->
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-20 md:mt-10 space-y-0
+    md:space-y-0">
+            <!-- Left Item -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2 md:ml-20">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5x md:text-left">What is Epsilon?</h1>
+                <p class="max-w-sm text-center text-darkGrayishBlue md:text-left my-0">Epsilon Is organized by STEM, a
+                    student
+                    society at Alpha College. The event is a 3-day Science Olympiad themed on cosmology with fun modules
+                    for
+                    everyone!
+                </p>
+                <div class="flex justify-center md:justify-start">
+                    <a class="p-3 px-6 text-white bg-epsilondev-purple  hover:bg-darkGrayishBlue rounded-3xl baseline text-xl font-semibold"
+                        href="">
+                        Register
+                    </a>
+
+                </div>
+            </div>
+            <!-- Right Item/ Image -->
+
+            <div class="md:w-1/2">
+                <img src="./imgs/robo1.png" alt="" class="">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Navigation -->
+
+    <section class="section-3 Main">
+        <div class="relative mx-auto container p-2 -mt-8">
+            <div class="flex text-white justify-center">
+                <div class="text-xl space-x-0 justify-center bg-epsilondev-purple rounded-xl px-4 md:flex py-3 hidden">
+                    <div class="border-r-2 px-12 border-epsilondev-blue"><a href="#">Modules</a>
+                    </div>
+                    <div class="border-r-2 px-12 border-epsilondev-blue"><a href="">Register</a></div>
+                    <div class="border-r-2 px-12 border-epsilondev-blue text-epsilondev-blue"><a href="">Overview</a>
+                    </div>
+                    <div class="border-r-2 px-12 border-epsilondev-blue "><a href="">About</a>
+                    </div>
+                    <div class="px-12"><a href="">Contact</a></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="bg-white container flex flex-col md:flex-row items-center px-6 mx-auto -mt-8 space-y-0 md:space-y-0 rounded-3xl py-2">
+            <!-- Left item -->
+            <div class="flex flex-col space-y-1 pt-16 pb-14 px-6 md:w-1/2 md:ml-10">
+                <h1 class="font-bold text-7xl">Epsilon</h1>
+                <h3 class="italic text-3xl pb-4">[ep.suh.lon]<span class="text-epsilondev-blue">noun</span></h3>
+                <h2 class="italic text-2xl">language: <span class="not-italic text-gray-700">greek alphabet</span></h2>
+                <h2 class="italic text-2xl">astronomy: <span class="not-italic text-gray-700">star in a
+                        constellation</span>
+                </h2>
+                <h2 class="italic text-2xl">science: <span
+                        class="not-italic text-epsilondev-blue font-semibold">inter-school
+                        science olympiad</span>
+                </h2>
+
+            </div>
+            <!-- Right Item -->
+            <div class="flex flex-col space-y-2 md:w-1/2 pb-16 pt-10">
+                <h2 class="font-bold text-2xl">Creative Growth</h2>
+                <p class="text-lg text-epsilondev-blue pb-2">It is the ultimate battle of wits, you get an opportunity
+                    to sharpen your inventive skills and compete with the
+                    sharpest amongest your age group</p>
+
+                <h2 class="font-bold text-2xl">Practical Approach</h2>
+                <p class="text-lg text-epsilondev-blue pb-2">An opportunity to learn more about your hobbies like
+                    coding and robotics. It is a vital chance to put use of
+                    your learned skills or discover a new passion</p>
+
+                <h2 class="font-bold text-2xl">Evaluative Growth</h2>
+                <p class="text-lg text-epsilondev-blue">The practical layout of our modules brings out the
+                    critical thinking skills dormant in our participants</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Download -->
+    <section class="py-20 mt-20">
+        <!-- Heading -->
+        <div class="sm:w-3/4 lg:w-5/12 mx-auto">
+            <h1 class="text-3xl text-center text-bookmark-blue">
+                Download the App!
+            </h1>
+            <p class="text-center text-bookmark-grey mt-4">
+                Updates on the go, everthing related to the event on your mobile for ease of access.
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+            <!-- Card 1 -->
+            <div class="flex flex-col shadow-md rounded-md lg:mb-16 hover:cursor-pointer">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="./imgs/logo-chrome.svg" alt="" />
+                    <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">For Android</h3>
+                    <p class="mb-2 text-bookmark-grey font-light">version 10 or ></p>
+                </div>
+                <hr class="border-b border-bookmark-white" />
+                <div class="flex p-6">
+                    <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-red hover:text-black">
+                        Get on Play Store
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col rounded-md shadow-md lg:my-8">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="./imgs/logo-firefox.svg" alt="" />
+                    <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">For IOS</h3>
+                    <p class="mb-2 text-bookmark-grey font-light">IOS 12 or ></p>
+                </div>
+                <hr class="border-b border-bookmark-white" />
+                <div class="flex p-6">
+                    <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-red hover:text-black">
+                        Get on App Store
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Form -->
+
+    <section class="bg-white w-[400px] md:w-[1200px] mx-auto">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Us
+            </h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">Facing
+                technical difficulties while registering? Want to send feedback about something? Need details about
+                Epsilon? Let us know.
+            </p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your
+                        email</label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                        placeholder="name@alpha.edu.pk" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-50"
+                        placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your
+                        message</label>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                        placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit"
+                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-500 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                    message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Form end -->
+
+
+    <section id="FeeStructure">
+        <div class="px-4 container flex flex-col mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+            <!-- Fee Structure -->
+            <div class="flex flex-col space-y-12 md:w-1/2 md:ml-20">
+                <h2 class="max-w-md font-bold text-center text-2xl md:text-left">What is the Epsilon Fee Structure?</h2>
+                <p class="max-w-sm italic text-lg text-center md:text-left">
+                    You can register for Epsilon within 2 normal intake stages. <span
+                        class="text-epsilondev-blue">Earlybird -
+                        Regular.</span> <br>
+                    You can select Upto 6 modules, with a maximum of 5 individuals per delegation. Be quick as Epsilon
+                    can only
+                    accomadate a limited number of people. <br>
+
+                    <a class="text-blue-500 underline hover:text-darkBlue" href="#">Explore our Modules</a> to Learn
+                    more!
+                </p>
+
+            </div>
+
+            <div class="flex flex-col space-y-8 md:w-1/2">
+                <!-- List item 1 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <div class="rounded-l-full bg-epsilondev-blue md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-epsilondev-purple">01</div>
+                            <h3 class="text-base font-bold md:mb- md:hidden">Earlybird Registartion: </h3>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block">Earlybird Registration:</h3>
+                        <p class="text-darkGrayishBlue">Per delegate Registration fee: PKR 3500 <br>
+                            Delegation fee: PKR 1500</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <div class="rounded-l-full bg-veryPaleRed md:bg-transparent">
+                        <div class="flex items-center space-x-2">
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-epsilondev-purple">02</div>
+                            <h3 class="text-base font-bold md:mb- md:hidden">Regular Registartion: </h3>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block">Regular Registration:</h3>
+                        <p class="text-darkGrayishBlue">Per delegate Registration fee: PKR 4000 <br>
+                            Delegation fee: PKR 1500</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="testamonials">
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+            <!-- Heading -->
+            <h2 class="text-4xl font-bold text-center">
+                Meet Our Organizing Team!
+            </h2>
+            <!-- Testamonials -->
+            <div class="flex flex-col gap-12 mt-24 md:flex-row md:space-x-6 team">
+                <!-- Testamonial 1 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img class="w-16 -mt-14" src="./imgs/avatar-anisha.png" alt="">
+                    <h5 class="text-lg font-bold">Abdullah Ahmed <br> <span class="text-sm font-light">Executive
+                            Council</span>
+                    </h5>
+                    <!-- <h6 class="text-sm font-light">Executive Council</h6> -->
+                    <p class="text-sm text-darkGrayishBlue">"marketing quote about how you'll love epsilon"</p>
+                </div>
+                <!-- Testamonial 2 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img class="w-16 -mt-14" src="./imgs/avatar-anisha.png" alt="">
+                    <h5 class="text-lg font-bold">Hassan<br> <span class="text-sm font-light">Executive Council</span>
+                    </h5>
+                    <!-- <h6 class="text-sm font-light">Executive Council</h6> -->
+                    <p class="text-sm text-darkGrayishBlue">"marketing quote about how you'll love epsilon"</p>
+                </div>
+                <!-- Testamonial 3 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img class="w-16 -mt-14" src="./imgs/avatar-anisha.png" alt="">
+                    <h5 class="text-lg font-bold">Umer Siddique<br> <span class="text-sm font-light">Executive
+                            Council</span>
+                    </h5>
+                    <!-- <h6 class="text-sm font-light">Executive Council</h6> -->
+                    <p class="text-sm text-darkGrayishBlue">"marketing quote about how you'll love epsilon"</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+                <!-- Testamonial 4 -->
+                <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                    <img class="w-16 -mt-14" alt="">
+                    <h5 class="text-lg font-bold">Muhammed Umer Zain</h5>
+                    <p class="text-sm text-darkGrayishBlue">"marketing quote about how you'll love epsilon"</p>
+                </div>
+                <!-- Testamonial 5 -->
+                <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                    <img class="w-16 -mt-14" src="../img/avatar-ali.png" alt="">
+                    <h5 class="text-lg font-bold">Hassan Akhter</h5>
+                    <p class="text-sm text-darkGrayishBlue">"marketing quote about how you'll love epsilon"</p>
+                </div>
+                <!-- Testamonial 6 -->
+                <div class="hidden md:flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img class="w-16 -mt-14" src="../img/avatar-richard.png" alt="">
+                    <h5 class="text-lg font-bold">Hassan Shehzad</h5>
+                    <p class="text-sm text-darkGrayishBlue">"marketing quote about how you'll love epsilon"</p>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="my-8 md:my-16">
+                <a href="#"
+                    class="py-3 px-6 text-white bg-epsilondev-purple rounded-full baseline hover:bg-epsilondev-blue hover:text-epsilondev-purple font-semibold">View
+                    Full Team</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- CTA Section -->
+    <section id="cta" class="bg-epsilondev-purple">
+        <!-- Flex Container -->
+        <div
+            class="container flex flex-col items-center justify-between px-6 py-12 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+            <!-- Heading -->
+            <h2
+                class="text-3xl font-semibold leading-tight text-white md:text-4xl md:max-w-xl md:text-left text-center">
+                Sign
+                up for Epsilon, <br> Earlybird Intake underway!</h2>
+            <!-- Button -->
+            <div class="my-10">
+                <a href="#"
+                    class="p-3 px-6 pt-2 text-epsilondev-purple fonr-semibold bg-epsilondev-blue font-semibold text-lg rounded-2xl shadow-3xl baseline hover:bg-purple-300">Register
+                    Now</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+        <div
+            class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social links container -->
+            <div
+                class="flex flex-col-reverse items-center justify-between spaec-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 text-center text-white md:hidden">STEM Society &copy; 2022, All Rights
+                    Reserved.</div>
+                <div class="md:pb-6 -ml-4">
+                    <img src="./imgs/epsilon 112.png" width="300px" height="150px" alt="">
+                </div>
+                <!-- Social Links container -->
+                <div class="flex justify-center space-x-4 my-8 md:my-0">
+                    <!-- Link 1 -->
+                    <a href="">
+                        <img class="h-4 lg:h-6" src="./imgs/icon-facebook.svg" alt="">
+                    </a>
+                    <!-- Link 2 -->
+                    <a href="">
+                        <img class="h-4 lg:h-6" src="./imgs/icon-instagram.svg" alt="">
+                    </a>
+                    <!-- Link 3 -->
+                    <a href="">
+                        <img class="h-4 lg:h-6" src="./imgs/icon-twitter.svg" alt="">
+                    </a>
+                    <!-- Link 4 -->
+                    <a href="">
+                        <img src="" class="h-4 lg:h-6" alt="">
+                    </a>
+                    <!-- Link 5 -->
+                    <a href="">
+                        <img src="" class="h-4 lg:h-6" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- List container -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="" class="hover:text-epsilondev-blue">Home</a>
+                    <a href="" class="hover:text-epsilondev-blue">Fees</a>
+                    <a href="" class="hover:text-epsilondev-blue">Blog</a>
+                </div>
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="" class="hover:text-epsilondev-blue">Team</a>
+                    <a href="" class="hover:text-epsilondev-blue">About STEM</a>
+                    <a href="" class="hover:text-epsilondev-blue">Rules/Guidelines</a>
+                </div>
+            </div>
+            <!-- Input Container -->
+            <div class="flex flex-col justify-between">
+                <form>
+                    <div class="flex space-x-3">
+                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none"
+                            placeholder="Updates in your inbox">
+                        <button
+                            class="px-6 py-2 text-white rounded-full bg-epsilondev-blue hover:bg-purple-800 focus:outline-none">Go</button>
+                    </div>
+                </form>
+                <div class="hidden text-white md:block">STEM Society &copy; 2022, All Rights Reserved <br> Dev Build disconnected from back-end, This is not final build
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="../src/main.js"></script>
+
+    <!-- in document script to share the file with functionality intact, temporary only. -->
+
+</body>
+
+</html>

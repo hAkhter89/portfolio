@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epsilon User Interface</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script defer src="../../src/POrtal/main.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script>
+    window.localStorage.setItem('hash', '8db40bca35ff678c194812d41cfeaee6')
+    let hash = window.localStorage.getItem("hash")
+    // getData()
+
+    // .then(function(info) {
+    //   if (!info) {
+    //     console.log(info)
+    //   }
+    //   else {
+    //     console.log("hello")
+    //   }
+    // })
+
+    // $.post("http://epsilon.move.pk/query.php", {
+    //   query: "login",
+    //   hash: '8db40bca35ff678c194812d41cfeaee6'
+    // }, function (result) {
+    //   result = JSON.parse(result);
+    //   console.log(result)
+    // })
+    async function getInput() {
+      let formData = new FormData();
+      formData.append("query", "login");
+      formData.append("hash", '8db40bca35ff678c194812d41cfeaee6');
+      await fetch("http://epsilon.move.pk/query.php", {
+        method: "POST",
+        body: formData
+      }).then(function (response) {
+        abc = response.text().then(function (value) {
+          value = JSON.parse(value)
+          console.log(value);
+          if (value) {
+            async function getData() {
+              let newFormData = new FormData();
+              newFormData.append("query", "teamData");
+              newFormData.append("hash", '8db40bca35ff678c194812d41cfeaee6');
+              await fetch("http://epsilon.move.pk/query.php", {
+                method: "POST",
+                body: newFormData
+              }).then(function(response){
+                abc = response.text().then(function(value) { 
+                  info = JSON.parse(value)
+                  console.log(info)
+
+                  const members = info.members
+                  members.map((member, index) => {
+                    console.log(member)
+                    var box = document.createElement('div')
+                    box.classList.add("box")
+                    var heading = document.createElement('h3')
+                    heading.innerHTML = "Participant " + (index + 1)
+
+                    var partItem = document.createElement('div')
+                    partItem.classList.add("part-item")
+                    var name = document.createElement('p')
+                    name.innerHTML = "<b>Name:</b> " + member.name
+                    var institute = document.createElement('p')
+                    institute.innerHTML = "<b>Institution:</b> " + member.institution
+                    partItem.appendChild(name)
+                    partItem.appendChild(institute)
+                    
+                    box.appendChild(heading)
+                    box.appendChild(partItem)
+                    console.log(box)
+                    
+                    document.querySelector(".part-container").appendChild(box)
+                  })
+                  document.querySelector(".status").innerHTML = "<h3>Payment Status:</h3> " + info.paymentStatus.toUpperCase()
+                  document.querySelector(".teamInfo").innerHTML = info.name + " - " + info.teamId;
+                });
+              })
+            }
+            getData()
+          }
+          else {
+            console.log('error')
+          }
+        })
+      })
+    }
+    getInput()
+
+    //   if (result) {
+    //     $.post("http://epsilon.move.pk/query.php", {
+    //       query: "teamData",
+    //       hash: '8db40bca35ff678c194812d41cfeaee6'
+    //     }, function (data) {
+    //       info = JSON.parse(data);
+    //       console.log(info);
+
+    //       const members = info.members
+    //       members.forEach((member, index) => {
+    //       console.log(member)
+
+    //       setTimeout(function(info) {
+
+
+    //       var box = document.createElement('div')
+    //       box.classList.add("box")
+    //       var heading = document.createElement('h3')
+    //       heading.innerHTML = "Participant " + (index + 1)
+
+    //       var partItem = document.createElement('div')
+    //       partItem.classList.add("part-item")
+    //       var name = document.createElement('p')
+    //       name.innerHTML = "<b>Name:</b> " + member.name
+    //       var institute = document.createElement('p')
+    //       institute.innerHTML = "<b>Institution:</b> " + member.institution
+    //       partItem.appendChild(name)
+    //       partItem.appendChild(institute)
+
+    //       box.appendChild(heading)
+    //       box.appendChild(partItem)
+    //       console.log(box)
+
+    //       document.querySelector(".part-container").appendChild(box)
+    //     }, 2000)
+    // })
+
+    //       // for (var i = 0; i < data.modules.length; i++) {
+    //       //     document.getElementById("modules").value += data.modules[i] + "";
+    //       // }
+    //       // document.getElementById("team").innerHTML += data.teamId + "";
+    //       // // document.getElementById("status").value += data.paymentStatus + "";
+    //       // for (var j = 0; j < data.members.length; j++) {
+    //       //     document.getElementById("members").value += data.members[j].name + "" + data.members[j].institution;
+    //       // }
+    //       // if (data.paymentStatus == "paid") {
+    //       //     document.getElementById("proofOfPayment").style.display = "";
+    //       // }
+    //       // else {
+    //       //     document.getElementById("proofOfPayment").style.display = "";
+    //       // }
+    //     }
+    //     );
+    //   }
+    //   else {
+    //     // window.location.href = 'http://127.0.0.1:5500/public/Login/login1.html'
+    //   };
+    // }
+    // );
+  </script>
+  <!-- <script defer src="../../src/Portal/main.js"></script> -->
+</head>
+
+<body style="background-color: #ececec;">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-4"
+        style="background-color: white; height: auto; border-radius: 20px; margin-top: 50px;">
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-2" style="float: left;">
+            <img src="avatar.png" style="height: 60px; width:65px; margin-top:15px;">
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8" style="padding-left:20px;">
+            <h3>Welcome back <h4 id="team" style="color:#A44CD3;">
+                <p class="teamInfo"></p>
+          </div>
+          </h4>
+          </h3><br>
+        </div>
+        <div class="tabs">
+          <span class="btn active"><i class="material-icons icon iactive">account_circle</i>Team</span><br>
+          <span class="btn"><i class="material-icons icon">people</i>Module</span><br>
+          <span class="btn"><i class="material-icons icon">payment</i>Payment</span><br>
+          <!-- <span class="btn" style="pointer-events: none; opacity: 0.5;"><i class="material-icons icon">poll</i>Results</span><br> -->
+        </div>
+        <button type="button" class="btn logout" id="btn2">Logout</button><br><br>
+      </div>
+
+      <div class="col-lg-8 col-md-8 col-sm-8 right">
+        <div class="contents">
+          <div class="ct active">
+            <div class="text">
+              <h2><b>Team Details</b></h2>
+              <span class="line"></span>
+            </div>
+
+            <div class="part-container">
+            </div>
+          </div>
+          <div class="ct">
+            <div class="text">
+              <h2><b>Module Details</b></h2>
+              <span class="line"></span>
+              <div class="modules">
+                <div class="img"><img src="../img/area.jpg" alt=""></div>
+                <div class="img"><img src="../img/area.jpg" alt=""></div>
+                <div class="img"><img src="../img/area.jpg" alt=""></div>
+                <div class="img"><img src="../img/area.jpg" alt=""></div>
+                <div class="img"><img src="../img/area.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="ct">
+            <div class="text">
+              <h2><b>Payment Details</b></h2>
+              <span class="line"></span>
+              <div class="status"></div>
+              <div class="upload">
+                <p>Upload Image(jpg,png,svg,jpeg)</p>
+                <form class="form">
+                  <label>
+                    <p>Select a photo</p>
+                    <input type="file" class="img-input" accept="image/png, image/jpg" />
+                  </label>
+                  <button type="submit" class="form-submit">Submit</button>
+                  <p class="error"></p>
+                </form>
+                <div class="display-img"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="ct">
+            <div class="text">
+              <h2><b>Results</b></h2>
+              <span class="line"></span>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

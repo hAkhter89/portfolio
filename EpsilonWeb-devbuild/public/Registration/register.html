@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Epsilon - Register</title>
+	<link rel="stylesheet" href="../Login/style.css">
+	<style>
+		.sectionButtons{
+			border: solid black 1px;
+			cursor: pointer;
+			user-select: none;
+		}
+		#next, #back{
+			font-size: 2em;
+		}
+		#deleteMember{
+			position: relative;
+			float: right;
+		}
+	</style>
+	<script defer src="../../src/Registration/register.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div>
+		<div id="sectionsNavBar">
+			<span id="back" style="cursor: pointer; user-select: none;">&lt;</span>
+			<span class="sectionButtons" id="0">Team Details</span>
+			<span class="sectionButtons" id="1">Modules</span>
+			<span class="sectionButtons" id="2">Head Delegate</span>
+			<span class="sectionButtons" id="3">Member 2</span>
+			<span class="sectionButtons" id="4">Member 3</span>
+			<span class="sectionButtons" id="5">Member 4</span>
+			<span id="addMember">Add Member</span>
+			<span id="next" style="cursor: pointer; user-select: none;">&gt;</span>
+		</div>
+
+		<form id="form">
+			<div id="sectionsContainer">
+			<!-- Section 0 -->
+				<div class="sections" id="section0" style='display: block;'>
+					<div class="team-name">
+						<label>
+							<b>Team Name</b>
+							<input type="text" name="name" placeholder="Team Name" id="name" value="test">
+						</label>
+						<label>
+							<b>Team Password</b>
+							<input type="password" name="password" placeholder="Password" id="password" value="testPass">
+							<input type="password" name="repassword" placeholder="Re-Enter Password" id="repassword" value="testPass">
+						</label>
+						<div class="note">note
+							<textarea name="notes" id="notes" cols="12" rows="3"></textarea>
+						</div>
+						<div>
+							<label>Brand Ambassador
+								<select name="ambassador" id="ambassador">
+									<option value="" selected>None</option>
+								</select>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Section 1 -->
+				<div class="sections" id="section1" style="display: none;">
+				<!-- <div class="sections" id="section1"> -->
+					<h2>Modules</h2>
+					<div class="modules"></div>
+				</div>
+
+				<!-- Section 2 -->
+				<div class="sections members" id="section2" style="display: none;">
+					<!-- <h2>Member Details</h2> -->
+					<h3>Head Delegate Details</h3>
+					<label>Name: <input type="text" name="name1" placeholder="Name" id="name1" ></label><br>
+					<label>Email: <input type="email" name="email1" placeholder="Email" id="email1" ></label><br>
+					<label>Phone: <input type="text" name="phone1" placeholder="03xxxxxxxxx" id="phone1" 
+							minlength="11" maxlength="11"></label><br>
+					<label>institution: <input type="text" name="institution1" placeholder="institution" id="institution1"
+							></label><br>
+				</div>
+
+				<!-- Section 3 -->
+				<div class="sections members" id="section3" style="display: none;">
+					<h3>Member 2 Details</h3>
+					<label>Name: <input type="text" name="name2" placeholder="Name" id="name2" ></label><br>
+					<label>Email: <input type="email" name="email2" placeholder="Email" id="email2" ></label><br>
+					<label>Phone: <input type="text" name="phone2" placeholder="03xxxxxxxxx" id="phone2" 
+							minlength="11" maxlength="11"></label><br>
+					<label>institution: <input type="text" name="institution2" placeholder="institution" id="institution2"
+							></label><br>
+				</div>
+
+				<!-- Section 4 -->
+				<div class="sections members" id="section4" style="display: none;">
+					<h3>Member 3 Details</h3>
+					<label>Name: <input type="text" name="name3" placeholder="Name" id="name3" ></label><br>
+					<label>Email: <input type="email" name="email3" placeholder="Email" id="email3" ></label><br>
+					<label>Phone: <input type="text" name="phone3" placeholder="03xxxxxxxxx" id="phone3" 
+							minlength="11" maxlength="11"></label><br>
+					<label>institution: <input type="text" name="institution3" placeholder="institution" id="institution3"
+							></label><br>
+				</div>
+
+				<!-- Section 5 -->
+				<div class="sections members" id="section5" style="display: none;">
+					<h3>Member 4 Details</h3>
+					<label>Name: <input type="text" name="name4" placeholder="Name" id="name4" ></label><br>
+					<label>Email: <input type="email" name="email4" placeholder="Email" id="email4" ></label><br>
+					<label>Phone: <input type="text" name="phone4" placeholder="03xxxxxxxxx" id="phone4" 
+							minlength="10" maxlength="11"></label><br>
+					<label>institution: <input type="text" name="institution4" placeholder="institution" id="institution4"
+							></label><br>
+					<input id="submit" type="submit" value="Register">
+				</div>
+			</div>
+		</form>
+
+		<p id="errorBox"></p>
+	</div>
+</body>
+
+</html>

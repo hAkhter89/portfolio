@@ -1,0 +1,138 @@
+/* classes */
+.border-radius {
+    border-radius: 15px!important;
+}
+
+.font-size-change {
+    font-size: 00.95rem;
+    margin: 5px auto;
+    padding: 0;
+    width: 90%;
+    display: block;
+    color: grey;
+}
+
+.center {
+    text-align: center!important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: black; */
+    background-color: #f2f1f1;
+    font-family: Montserrat;
+}
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: #45f3ff;
+    transform: translateY(-34px) translateX(-2px);
+    font-size: 0.75em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.form .inputBox {
+    margin: 30px 0;
+}
+
+.form * {
+    margin: 0 auto;
+}
+
+
+.form input {
+    width: 100%!important;
+}
+
+.form .inputText {
+    width: 90%;
+    margin: 10px auto;
+}
+
+
+.heading {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.container{
+    margin: 20px;
+    width: 350px;
+    height: 720px;
+    background-color: white;
+    border-top: 2em solid white;
+    border-bottom: 2em solid white;
+    border-left: .5em solid white;
+    border-right: .5em solid white;
+    /* border: 0.5em solid white; */
+}
+    
+#sub-container {
+    padding: 40px 10px;
+}
+
+.inputBox input:valid~i,
+.inputBox input:focus~i {
+    height: 44px;
+}
+
+.heading, .inputBox {
+    color: #351750;
+}
+#password, #id, .form{
+    background: #f2f1f1;
+    border-radius: 5px;
+}
+
+#form{
+    background: #ffffff;
+    padding: 0 35px 30px;
+    margin: 30px 15px;
+}
+
+#form input {
+    color: grey!important;
+}
+
+span{
+    color: #351750;
+}
+#password, #id {
+    color: #ffffff;
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+
+
+.submission-buttons {
+    width: 100%!important;
+    display: block;
+    text-align: center;
+    color: white ;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: #351750;
+    margin: 10px 0;
+}
+
+#togglePassword {
+    position: relative;
+    left: 87%;
+    transform: translate(0, -75%);
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ececec;
+    font-family: 'Poppins';
+}
+
+.tabs .btn {
+    background-color: #ececec;
+    color: #A44CD3;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.tabs .active {
+    background-color: #3B0160;
+    color: #ececec;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#btn2 {
+    background-color: #3B0160;
+    color: #A44CD3;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.tabs span .icon {
+    float: left;
+    size: 50px;
+    color: #3B0160;
+}
+
+.tabs span .iactive {
+    float: left;
+    size: 50px;
+    color: #A44CD3;
+}
+
+.contents .ct {
+    display: none;
+    background-color: white;
+    border-radius: 15px;
+    height: fit-content;
+    min-height: 200px;
+    background-color: white; 
+    height: auto; 
+    border-radius: 20px; 
+    margin-top: 50px;
+    padding: 20px 30px;
+}
+
+.contents .ct .text {
+    padding-bottom: 20px;
+}
+
+.contents .ct .text h3 {
+    color: #3B0160;
+}
+
+.contents .ct .text .status {
+    font-size: 15px;
+    color: red;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.contents .ct .text span {
+    height: 3px;
+    width: 60%;
+    background: #3B0160;
+    border-bottom: 1px solid black;
+    position: absolute;
+}
+
+.contents .active {
+    display: block;
+}
+
+.contents .ct .part-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contents .ct .modules {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+}
+
+.contents .ct .modules .img {
+    height: 100px;
+    width: 200px;
+    margin: 10px 10px 0 0;
+    border-radius: 20px;
+}
+
+.contents .ct .modules .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.display-img {
+    height: 200px;
+    width: 400px;
+    border: none;
+    display: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+

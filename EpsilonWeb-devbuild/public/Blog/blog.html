@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body class="bg-epsilondev-grey">
+
+    <!-- Navbar -->
+    <section class="section-1 bg-veryDarkBlue">
+        <nav class="relative container mx-auto p-3">
+            <!-- Flex container -->
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="pt-1">
+                    <a href="../index.html"><img src="../imgs/epsilon 112.png" height="50px" width="300px" alt=""></a>
+                </div>
+                <!-- Menu Items -->
+                <div class="text-white md:flex space-x-6 hidden">
+                    <a class="hover:text-epsilondev-blue text-lg mt-2" href="#">Modules</a>
+                    <a class="hover:text-epsilondev-blue text-lg mt-2" href="#team">Team</a>
+                    <!-- <a class="hover:text-darkGrayishBlue text-lg mt-2" href="#">About</a>
+                    <a class="hover:text-darkGrayishBlue text-lg mt-2" href="#">Contact Us</a> -->
+                    <a class="hover:text-epsilondev-blue text-lg mt-2 text-epsilondev-blue" href="#">Blog</a>
+                    <a class="hover:text-epsilondev-blue text-lg mt-2" href="../Login/login1.html">Login</a>
+                    <a class="hidden md:block p-3 px-6 text-white bg-epsilondev-purple rounded-full baseline hover:text-epsilondev-blue"
+                        href="../index.html">
+                        Register
+                    </a>
+
+                </div>
+                <!-- Button -->
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+
+            </div>
+            </div>
+            <div class="md:hidden">
+                <div id="menu"
+                    class="absolute flex-col items-center self-end py-8 mt-7 space-y-6 px-2 font-bold bg-white text-black sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden rounded-2xl">
+                    <a class="hover:text-epsilondev-blue" href="">Modules</a>
+                    <a class="hover:text-epsilondev-blue" href="">Team</a>
+                    <a class="hover:text-epsilondev-blue" href="">About</a>
+                    <a class="hover:text-epsilondev-blue" href="">Blog</a>
+                    <a class="hover:text-epsilondev-blue underline decoration-epsilondev-blue decoration-2 underline-offset-4"
+                        href="">Login</a>
+                    <a href=""
+                        class="rounded-4xl font-semibold w-full text-white bg-epsilondev-purple text-center py-2 text-lg rounded-md hover:bg-epsilondev-blue">Register</a>
+        </nav>
+    </section>
+
+    <!-- Main Blog Page -->
+
+    <section id="main">
+        <div class="container h-auto pb-20 mx-auto">
+            <div
+                class="flex items-center justify-evenly md:justify-between px-2 py-6 mt-20 bg-epsilondev-purple text-white rounded-full md:px-10 md:py-8">
+                <div class="ml-[20px] flex items-center  gap-4 md:gap-8">
+                    <a class="text-lg font-bold hover:text-epsilondev-blue" href="">Featured</a>
+                    <a class="hidden md:flex text-lg font-bold hover:text-epsilondev-blue" href="">Latest</a>
+                    <a class="hidden md:flex text-lg font-bold hover:text-epsilondev-blue" href="">Home</a>
+                    <a class="hidden md:flex text-lg font-bold hover:text-epsilondev-blue" href="">Modules</a>
+                    <div class="justify-end">
+
+
+                    </div>
+                </div>
+
+                <form>
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block w-[250px] md:w-[400px] p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search Posts!" required>
+                        <button type="submit"
+                            class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+
+            <div class="mx-10 mt-20 grid grid-cols-1 md:grid-cols-2 gap-y-10">
+                <div class=" items-center text-center w-full article">
+                    <div class="img w-[400px] h-[200px] bg-blue-300"></div>
+                    <div class="text w-[400px]">
+                        <h2 class="font-bold text-xl py-2">Article Title: How to Register to Epsilon, step by step
+                            guide!</h2>
+                        <p class="italic text-lg opacity-90 "> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veniam, ea reiciendis! Dicta non placeat, ab dolorum earum officiis impedit, ex quos
+                            voluptate explicabo debitis incidunt delectus consectetur repudiandae nam commodi!</p>
+                        <p class="underline hover:text-blue-500"><a href="">Read More [...]</a></p>
+                    </div>
+                </div>
+
+                <div class="w-full article">
+                    <div class="img w-[400px] h-[200px] bg-blue-300"></div>
+                    <div class="text w-[400px]">
+                        <h2 class="font-bold text-xl py-2">Article Title: How to Register to Epsilon, step by step
+                            guide!</h2>
+                        <p class="italic text-lg opacity-90 "> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veniam, ea reiciendis! Dicta non placeat, ab dolorum earum officiis impedit, ex quos
+                            voluptate explicabo debitis incidunt delectus consectetur repudiandae nam commodi!</p>
+                        <p class="underline hover:text-blue-500"><a href="">Read More [...]</a></p>
+                    </div>
+                </div>
+
+                <div class="w-full article">
+                    <div class="img w-[400px] h-[200px] bg-blue-300"></div>
+                    <div class="text w-[400px]">
+                        <h2 class="font-bold text-xl py-2">Article Title: How to Register to Epsilon, step by step
+                            guide!</h2>
+                        <p class="italic text-lg opacity-90 "> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veniam, ea reiciendis! Dicta non placeat, ab dolorum earum officiis impedit, ex quos
+                            voluptate explicabo debitis incidunt delectus consectetur repudiandae nam commodi!</p>
+                        <p class="underline hover:text-blue-500"><a href="">Read More [...]</a></p>
+                    </div>
+                </div>
+
+                <div class="w-full article">
+                    <div class="img w-[400px] h-[200px] bg-blue-300"></div>
+                    <div class="text w-[400px]">
+                        <h2 class="font-bold text-xl py-2">Article Title: How to Register to Epsilon, step by step
+                            guide!</h2>
+                        <p class="italic text-lg opacity-90 "> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veniam, ea reiciendis! Dicta non placeat, ab dolorum earum officiis impedit, ex quos
+                            voluptate explicabo debitis incidunt delectus consectetur repudiandae nam commodi!</p>
+                        <p class="underline hover:text-blue-500"><a href="">Read More [...]</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- CTA Section -->
+    <section id="cta" class="bg-epsilondev-purple">
+        <!-- Flex Container -->
+        <div
+            class="container flex flex-col items-center justify-between px-6 py-12 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+            <!-- Heading -->
+            <h2
+                class="text-3xl font-semibold leading-tight text-white md:text-4xl md:max-w-xl md:text-left text-center">
+                Sign
+                up for Epsilon, <br> Earlybird Intake underway!</h2>
+            <!-- Button -->
+            <div class="my-10">
+                <a href="#"
+                    class="p-3 px-6 pt-2 text-epsilondev-purple fonr-semibold bg-epsilondev-blue font-semibold text-lg rounded-2xl shadow-3xl baseline hover:bg-purple-300">Register
+                    Now</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+        <div
+            class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social links container -->
+            <div
+                class="flex flex-col-reverse items-center justify-between spaec-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 text-center text-white md:hidden">STEM Society &copy; 2022, All Rights
+                    Reserved.</div>
+                <div class="md:pb-6 -ml-4">
+                    <img src="../imgs/epsilon 112.png" width="300px" height="150px" alt="">
+                </div>
+                <!-- Social Links container -->
+                <div class="flex justify-center space-x-4 my-8 md:my-0">
+                    <!-- Link 1 -->
+                    <a href="">
+                        <img class="h-4 lg:h-6" src="./imgs/icon-facebook.svg" alt="">
+                    </a>
+                    <!-- Link 2 -->
+                    <a href="">
+                        <img class="h-4 lg:h-6" src="./imgs/icon-instagram.svg" alt="">
+                    </a>
+                    <!-- Link 3 -->
+                    <a href="">
+                        <img class="h-4 lg:h-6" src="./imgs/icon-twitter.svg" alt="">
+                    </a>
+                    <!-- Link 4 -->
+                    <a href="">
+                        <img src="" class="h-4 lg:h-6" alt="">
+                    </a>
+                    <!-- Link 5 -->
+                    <a href="">
+                        <img src="" class="h-4 lg:h-6" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- List container -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="" class="hover:text-epsilondev-blue">Home</a>
+                    <a href="" class="hover:text-epsilondev-blue">Fees</a>
+                    <a href="" class="hover:text-epsilondev-blue">Blog</a>
+                </div>
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="" class="hover:text-epsilondev-blue">Team</a>
+                    <a href="" class="hover:text-epsilondev-blue">About STEM</a>
+                    <a href="" class="hover:text-epsilondev-blue">Rules/Guidelines</a>
+                </div>
+            </div>
+            <!-- Input Container -->
+            <div class="flex flex-col justify-between">
+                <form>
+                    <div class="flex space-x-3">
+                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none"
+                            placeholder="Updates in your inbox">
+                        <button
+                            class="px-6 py-2 text-white rounded-full bg-epsilondev-blue hover:bg-purple-800 focus:outline-none">Go</button>
+                    </div>
+                </form>
+                <div class="hidden text-white md:block">STEM Society &copy; 2022, All Rights Reserved <br> This dev-build is not complete, not connected to back-end</div>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="./blog.js"></script>
+</body>
+
+</html>
